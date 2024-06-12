@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <img src="images/Untitled.jpg" alt="" class="logo">
+        <ul id="menu-links">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>About Me</li>
+        </ul>
+        <button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
+
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="toggleMenu()">
+    </nav>
+    <div class="header">
+        
+        <div class="header-content">
+            <h1><span>FREE</span><br><span>LANCER</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request call back <img src="images/phone.png" alt=""></button>
+            <button class="btn-light">Know More <img src="images/arrow-black.png" alt=""></button>
+        </div>
+        <p>Passionate UI/UX designer with 1000+ years of experience.</p>
+
+        <img src="images/pexels-jkerro-2912583.jpg" alt="" class="user-img">
+
+        </div> 
+    </div>
+
+    <script>
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links");
+
+
+        function toggleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+
+        window.onscroll = function(){
+
+            if(window.scrollY > 0){
+                navbar.style.background =  '#17c7fd';
+            
+            }else{
+                navbar.style.background =  'transparent';
+            }
+        }
+    </script>
+
+</body>
+</html>
